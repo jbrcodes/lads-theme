@@ -1,0 +1,13 @@
+<div class="post-excerpt">
+    {% if post.featured.url %}
+        <div class="img-wrapper">
+            <img src="{{ post.featured.url }}" class="img-responsive" alt="">
+        </div>
+    {% endif %}
+	<h2><a href="{{ post.permalink }}">{{ post.title }}</a></h2>
+	{{ post.excerpt }}
+    {% if post.hasMore %}
+        <a class="btn btn-default btn-xs" href="{{ post.permalink }}">{% trans 'more' %}</a>
+    {% endif %}
+	{% include 'postMeta.twig' %}
+</div>

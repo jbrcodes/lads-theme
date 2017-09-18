@@ -1,0 +1,120 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-08-01 09:16+0200\n"
+"PO-Revision-Date: 2017-08-01 09:18+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fr_FR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.7.1\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Poedit-Basepath: ../../../../../../../../../../../tmp/twig-cache\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: 35/35f3f60352433d8ba2b2eb29f56da250c8d8c10a8cf6330545b4ac832fd7ccd4.php:49
+msgid "more"
+msgstr "plus"
+
+#: 54/54ca45573ad9910a1eee821e072200defa5aee302fffda374a7db0f0bce570ed.php:28
+msgid "Published by %author% on %date%"
+msgstr "Publié par %author% le %date%"
+
+#: 6b/6b5b69757ef8f8d293d7ad92476ad0ff883d24a6ff2122fa9ef575bfac4f30bc.php:123
+#: 6c/6ce9a3ddf0700258ca713e52c8d6a4fdc8337b9dd43955fe505513beea719452.php:59
+msgid "Home"
+msgstr "Accueil"
+
+#: 6c/6ce9a3ddf0700258ca713e52c8d6a4fdc8337b9dd43955fe505513beea719452.php:29
+msgid "Search Results for"
+msgstr "Résultats pour"
+
+#: 6c/6ce9a3ddf0700258ca713e52c8d6a4fdc8337b9dd43955fe505513beea719452.php:51
+msgid "Posts for"
+msgstr "Articles pour"
+
+#: 6c/6ce9a3ddf0700258ca713e52c8d6a4fdc8337b9dd43955fe505513beea719452.php:66
+#: c8/c8b4e0e823d105710f2acd53f61d19f74b03a580b679818a5cbbe89cb10e1366.php:22
+msgid "Recent Posts"
+msgstr "Articles récents"
+
+#: 6c/6ce9a3ddf0700258ca713e52c8d6a4fdc8337b9dd43955fe505513beea719452.php:140
+msgid "No results found."
+msgstr "Aucuns résultats trouvés."
+
+#: 80/80780379ca2f9f3146071798029233c933759f43fa3e96cd372f9bdd8f000371.php:24
+msgid "search..."
+msgstr "chercher..."
+
+#: 87/87b93512673f0a206a9337b7885f69c1864ac03044e7f8b485af9f26cd9058cc.php:28
+msgid "older posts"
+msgstr "articles plus anciens"
+
+#: 87/87b93512673f0a206a9337b7885f69c1864ac03044e7f8b485af9f26cd9058cc.php:39
+msgid "newer posts"
+msgstr "articles plus récents"
+
+#: c8/c8b4e0e823d105710f2acd53f61d19f74b03a580b679818a5cbbe89cb10e1366.php:27
+msgid "January"
+msgstr "janvier"
+
+#: c8/c8b4e0e823d105710f2acd53f61d19f74b03a580b679818a5cbbe89cb10e1366.php:29
+msgid "February"
+msgstr "février"
+
+#: c8/c8b4e0e823d105710f2acd53f61d19f74b03a580b679818a5cbbe89cb10e1366.php:31
+msgid "March"
+msgstr "mars"
+
+#: c8/c8b4e0e823d105710f2acd53f61d19f74b03a580b679818a5cbbe89cb10e1366.php:33
+msgid "April"
+msgstr "avril"
+
+#: c8/c8b4e0e823d105710f2acd53f61d19f74b03a580b679818a5cbbe89cb10e1366.php:35
+msgid "May"
+msgstr "mai"
+
+#: c8/c8b4e0e823d105710f2acd53f61d19f74b03a580b679818a5cbbe89cb10e1366.php:37
+msgid "June"
+msgstr "juin"
+
+#: c8/c8b4e0e823d105710f2acd53f61d19f74b03a580b679818a5cbbe89cb10e1366.php:39
+msgid "July"
+msgstr "juillet"
+
+#: c8/c8b4e0e823d105710f2acd53f61d19f74b03a580b679818a5cbbe89cb10e1366.php:41
+msgid "August"
+msgstr "août"
+
+#: c8/c8b4e0e823d105710f2acd53f61d19f74b03a580b679818a5cbbe89cb10e1366.php:43
+msgid "September"
+msgstr "septembre"
+
+#: c8/c8b4e0e823d105710f2acd53f61d19f74b03a580b679818a5cbbe89cb10e1366.php:45
+msgid "October"
+msgstr "octobre"
+
+#: c8/c8b4e0e823d105710f2acd53f61d19f74b03a580b679818a5cbbe89cb10e1366.php:47
+msgid "November"
+msgstr "novembre"
+
+#: c8/c8b4e0e823d105710f2acd53f61d19f74b03a580b679818a5cbbe89cb10e1366.php:49
+msgid "December"
+msgstr "décembre"
+
+#: e6/e6f46708d01bd391b5e4a150ed812db17f1b122a9720111a37cbfe84f64ff8b9.php:31
+#: e6/e6f46708d01bd391b5e4a150ed812db17f1b122a9720111a37cbfe84f64ff8b9.php:42
+msgid "Page Not Found"
+msgstr "Aucune page trouvée"
+
+#: e6/e6f46708d01bd391b5e4a150ed812db17f1b122a9720111a37cbfe84f64ff8b9.php:47
+msgid "The page could not be found."
+msgstr "La page demandée est introuvable."

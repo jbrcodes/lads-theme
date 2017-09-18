@@ -1,0 +1,328 @@
+/*
+Theme Name: LAdS
+Author: Jim Rudolf
+Author URI: http://www.jbrcodes.com
+Description: Theme for Les Amis de Svieta
+Version: 3.0
+*/
+
+
+/* ========== global stuff ========== */
+
+.lads-blue-bg {
+    background-image: url(images/blue-dot.png);  /* #91d2e4 */
+    background-repeat: repeat;
+}
+
+/* ========== header ========== */
+
+header {
+    margin-bottom: 10px;
+}
+
+#lads-header-graphic {
+    height: 90px;
+    background-repeat: no-repeat;
+}
+
+#lads-header-text {
+    text-align: right;
+    margin: 5px 0;
+}
+
+#header-row-2 {
+    padding: 10px 0;
+    background-color: #81bbca;
+
+}
+
+/* global nav (Bootstrap) overrides, non-collapsed menu */
+
+.navbar {
+    min-height: 0;
+}
+
+.navbar-default {
+    float: left;
+    margin-bottom: 0;
+    border-width: 0;
+    background-color: #81bbca !important;
+}
+
+.navbar-nav > li > a {
+    padding: 5px 15px;
+    border-radius: 4px;
+    font-weight: bold;
+    color: #666 !important;
+}
+
+.navbar-nav > li > a:hover {
+    background-color: #91d2e4 !important;
+}
+
+/* global nav (Bootstrap) overrides, collapsed (hamburger) menu */
+
+.navbar-header button {
+    border-width: 0;
+    margin: 0;
+    background-color: #81bbca !important;
+}
+
+.navbar-header button:focus {
+    background-color: #81bbca !important; 
+}
+
+.navbar-header button:hover {
+    background-color: #91d2e4 !important;
+}
+
+.navbar-default .navbar-toggle {
+    float: none;
+}
+
+.navbar-collapse {
+    border-width: 0;
+}
+
+/* WPML overrides */
+
+.wpml-ls-legacy-dropdown {
+    float: right;
+    width: auto !important;
+    margin-top: 2px;
+    border-radius: 4px;
+}
+
+/* remove gray border */
+.wpml-ls-statics-shortcode_actions, 
+.wpml-ls-statics-shortcode_actions .wpml-ls-sub-menu, 
+.wpml-ls-statics-shortcode_actions a {
+    border-width: 0 !important;
+}
+
+/* menu item background color */
+.wpml-ls-statics-shortcode_actions a {
+     background-color: #91d2e4 !important;   
+}
+
+/* ========== sidebar ========== */
+
+#sidebar {
+	margin-top: 55px;
+    margin-bottom: 10px;
+}
+
+#sidebar h2 {
+	font-size: 150%;
+	border-bottom: 1px solid #aaa;
+}
+
+/* --- widgets --- */
+
+.widget {
+	margin-top: 20px;
+}
+
+/* search input field */
+#s {
+    width: 70%;
+}
+
+.widget_lads-faces img {
+	width: 100%;
+	height: auto;
+}
+
+.widget_recent_entries ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+    line-height: 1.2em;
+}
+
+.widget_recent_entries li {
+	margin: 10px 0;
+}
+
+/* social media icons */
+.widget_twig i.fa {
+	font-size: 2em;
+	padding-right: 5px;
+}
+
+.widget_twig h2.paypal {
+    margin-bottom: 20px;
+}
+
+/* Hide faces widget on XS */
+@media only screen and (max-width: 767px) {
+
+    #sidebar {
+        margin-top: 20px;
+        border-top: 2px solid #ccc;
+    }
+    
+    .widget {
+        margin-top: 10px;
+    }
+    
+    #s {
+        margin-top: 10px;
+    }
+    
+    .widget_lads-faces {
+        display: none !important;
+    }
+    
+}
+
+/* ========== excerpt list ========== */
+
+ol.post-list {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+ol.post-list li {
+    clear: both;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+}
+
+ol.post-list .img-wrapper {
+    float: left;
+    width: 25%;
+    max-height: 15em;
+    margin: 0 10px 12px 0;
+    overflow: hidden;
+    box-shadow: 2px 2px 5px #aaa;
+}
+
+ol.post-list h2 {
+    margin-top: 12px;
+}
+
+/* --- posts --- */
+
+.post-meta {
+    margin-top: 0.5em;
+	font-style: italic;
+	font-size: 90%;
+}
+
+/* paging and adjacent links */
+.lads-navbar {
+    clear: both;
+    margin-top: 1em;
+	border-top: 1px solid #ccc;
+}
+
+/* ========== footer ========== */
+
+footer {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+/* =========================================================
+    LAdS shortcode support: [lads_image], [lads_gallery]
+   ========================================================= */
+
+
+/* --- [lads_image] not in a gallery --- */
+
+.lads-image {
+    display: block;
+	margin: 1em 10%;
+}
+
+.lads-image img {
+    max-height: 600px;
+    margin: 0 auto;
+	box-shadow: 2px 2px 5px #aaa;
+}
+
+.lads-image figcaption {
+	padding-top: 5px;
+	text-align: center;
+	font-style: italic;
+}
+
+/* XS screens (<768px) */
+@media only screen and (max-width: 767px) {
+    
+    .lads-image img {
+        max-height: 400px;
+    }
+    
+}
+
+/* --- [lads_gallery] --- */
+
+.lads-gallery {
+    position: relative;
+    padding: 2px;
+    margin: 1em 0;
+}
+
+.lads-gallery .lads-image {
+    margin: 0 10%;
+}
+
+.lads-thumbs {
+    margin-top: 10px;
+    border-top: 1px solid #ccc;
+    padding-top: 5px;
+}
+
+/* Provide some vert space between thumbs */
+.lads-thumbs .row > div {
+    padding-top: 10px;
+}
+
+.lads-thumbs .lads-image {
+    margin: 0;
+    height: 100px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.lads-thumbs figcaption {
+    display: none;
+}
+
+.lads-thumbs img {
+    max-height: 150px;
+}
+
+.lads-gallery .glyphicon {
+    position: absolute;
+    top: 50px;
+}
+
+.lads-gallery .glyphicon-chevron-right {
+    right: 2%;
+}
+
+.lads-gallery .glyphicon-chevron-left {
+    left: 2%;
+}
+
+/* XS screens (<768px) */
+@media only screen and (max-width: 767px) {
+
+    .lads-gallery .glyphicon {
+        top: 20px;
+    }
+
+    .lads-gallery .glyphicon-chevron-right {
+        right: 0;
+    }
+
+    .lads-gallery .glyphicon-chevron-left {
+        left: 0;
+    }
+    
+}

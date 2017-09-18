@@ -1,0 +1,46 @@
+{% extends 'layout.twig' %}
+
+{# Determine what kind of index this is and create the corresponding title #}
+{% if index.type == 'search' %}
+    {% set title %}{% trans %}Search Results for{% endtrans %} '{{ index.search|escape }}'{% endset %}
+{% elseif index.type == 'archive' %}
+    {% if index.month is defined %}
+        {% set m = index.month %}
+        {% set month %}{% trans m %} {% endset %}
+    {% else %}
+        {% set month = '' %}
+    {% endif %}
+    {% set title %}{% trans 'Posts for' %} {{ month }}{{ index.year }}{% endset %}
+{% else %}
+    {% set title %}{% trans 'Home' %}{% endset %}
+{% endif %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{# If home page, use 'Recent Posts' for heading #}
+{% if index.type == 'home' %}
+    {% set h1 %}{% trans 'Recent Posts' %}{% endset %}
+{% else %}
+    {% set h1 = title %}
+{% endif %}
+
+{% block content %}
+
+    <h1>{{ h1 }}</h1>
+
+    {% if posts|length > 0 %}
+        <ol class="post-list">
+            {% for post in posts %}
+                <li>{% include 'postExcerpt.twig' %}</li>
+            {% endfor %}
+        </ol>
+        {% include 'paging.twig' %}
+    {% else %}
+        <div class="alert alert-info">
+            {% trans %}
+            No results found.
+            {% endtrans %}
+        </div>
+    {% endif %}
+
+{% endblock content %}

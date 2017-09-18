@@ -1,0 +1,15 @@
+{% extends 'layout.twig' %}
+{% block title %}{% trans 'Page Not Found' %}{% endblock %}
+
+{% block content %}
+
+	<article>
+		<h1>{% trans 'Page Not Found' %}</h1>
+		<div class="alert alert-info">
+            {% trans %}
+            The page could not be found.
+            {% endtrans %}
+        </div>
+	</article>
+
+{% endblock content %}

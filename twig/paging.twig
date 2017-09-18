@@ -1,0 +1,10 @@
+<nav class="lads-navbar">
+	<ul class="pager">
+		{% if paging.prev.url %}
+			<li class="previous"><a href="{{ paging.prev.url }}">&laquo; {% trans 'older posts' %}</a></li>
+		{% endif %}
+		{% if paging.next.url %}
+			<li class="next"><a href="{{ paging.next.url }}">{% trans 'newer posts' %} &raquo;</a></li>
+		{% endif %}
+	</ul>
+</nav>

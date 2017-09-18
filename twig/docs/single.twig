@@ -1,0 +1,14 @@
+{% extends 'layout.twig' %}
+{% block title %}{{ post.title }}{% endblock %}
+
+{% block content %}
+
+	<article>
+		<h1>{{ post.title }}</h1>
+		{{ post.content }}
+		{% include 'postMeta.twig' %}
+	</article>
+
+	{% include 'adjPostLinks.twig' %}
+
+{% endblock content %}

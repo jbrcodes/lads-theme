@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="{{ env.lang }}">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>{% block title %}{% trans 'Home' %}{% endblock %} | LAdS</title>
+        <link rel="shortcut icon" href="{{ env.themeDirUrl }}/images/lads.ico">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="{{ env.themeDirUrl }}/style.css">
+        <style>
+            {% set i = random( range(1, 5) ) %}
+            #lads-header-graphic { background-image: url({{ env.themeDirUrl }}/images/headers/header-graphic-{{ i }}.png); }
+        </style>
+        {{ doc.wpHead }}
+	</head>
+	
+	<body>
+        
+        <header class="lads-blue-bg">
+            <div class="container">
+                <div id="lads-header-text">
+                    <img src="{{ env.themeDirUrl }}/images/headers/header-text.png" alt="Les Amis de Svieta">
+                </div>
+                <div id="lads-header-graphic"></div>
+            </div>
+ 
+            <div id="header-row-2">
+                <div class="container">
+                    {% include 'menuPrimary.twig' %}
+                    {{ doc.langSwitcher }}
+                </div>
+            </div>
+        </header>
+
+		<div class="container">
+			<div class="row">
+				<main class="col-sm-8 col-md-9">
+					{% block content %}{% endblock %}
+				</main>
+				
+				<div id="sidebar" class="col-sm-4 col-md-3">
+					{{ sidebar }}
+				</div>
+			</div>
+		</div>
+
+		<footer class="container lads-blue-bg text-center">
+			Copyright &copy; 2006-2017 Les Amis de Svieta
+		</footer>
+
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        {{ doc.wpFooter }}
+		
+	</body>
+</html>

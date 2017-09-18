@@ -1,0 +1,10 @@
+<nav class="lads-navbar">
+	<ul class="pager">
+		{% if adjPostInfo.prev.url %}
+			<li class="previous"><a href="{{ adjPostInfo.prev.url }}">&laquo; {{ adjPostInfo.prev.title }}</a></li>
+		{% endif %}
+		{% if adjPostInfo.next.url %}
+			<li class="next"><a href="{{ adjPostInfo.next.url }}">{{ adjPostInfo.next.title }} &raquo;</a></li>
+		{% endif %}
+	</ul>
+</nav>
